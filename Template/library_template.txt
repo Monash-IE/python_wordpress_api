@@ -1,0 +1,36 @@
+[ux_banner height="480px" height__sm="60%" bg="561" bg_size="original" bg_color="#ce9682" bg_pos="62% 60%"]
+
+[text_box text_color="dark" width="48" width__sm="90" scale__sm="80" padding="30px 30px 30px 30px" position_x="5" position_y="50" position_y__sm="95" text_align="left" bg="rgba(255, 255, 255, 0.94)" depth="1"]
+
+<h3 class="uppercase"><span style="font-size: 150%;"> LIBRARY_NAME </span></h3>
+
+[/text_box]
+
+[/ux_banner]
+[gap height="50px"]
+
+[section bg_color="rgb(255, 255, 255)" padding="59px" height="300px"]
+
+[row style="large" v_align="middle" h_align="center"]
+
+[col span="6" span__sm="12" padding="15px 15px 15px 15px" bg_color="rgb(155, 107, 90)" depth="1" depth_hover="3"]
+
+<h2 class="uppercase"><span style="color: #ffffff;">How to contact?</span></h2>
+
+[/col]
+[col span="6" span__sm="12" align="center"]
+
+<h4 style="text-align: left;">Address: add_address </h4>
+<h4 style="text-align: left;">Suburb: add_suburb </h4>
+<h4 style="text-align: left;">Phone Number: add_phone </h4>
+
+[/col]
+
+[/row]
+
+[/section]
+[gap]
+
+[block id="677"]
+
+[gap height="10px"]
