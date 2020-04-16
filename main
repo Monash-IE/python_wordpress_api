@@ -1,5 +1,7 @@
 import pandas as pd
 from python_wordpress_api import create_post as wp
+from python_wordpress_api import template_preparation as tp
+
 
 # size setup for pandas
 pd.set_option('display.max_rows', 500)
@@ -10,42 +12,19 @@ pd.set_option('display.width', 1000)
 def insert_data(file):
 
     # open the open data file
-    data_file = pd.read_csv('Output_files/' + file + '.csv')
+    data_file = pd.read_csv('Output_files/' + file + '_copy.csv')
 
     # open the theme to be inserted into a post
-    template = open(file + '_template.txt')
+    template = open('Template/' + file + '_template.txt')
 
     # check the type of the post
+
     if file == 'Library':
+        # call library prepare
+        return tp.library_prepare(data_file, template)
 
-        # list of library to be passed to the API
-        list_library = []
-
-        # insert unique info for each object to the theme.
-        for i in range(0, len(data_file)):
-
-            # store a copy of the theme to be edit
-            temp_template = template.read()
-
-            # insert library name
-            lib_name = temp_template.replace('LIBRARY_NAME', data_file['Locality Name'][i] + ' Library')
-            # insert library address
-            address = lib_name.replace('add_address', data_file['Address'][i])
-            # insert library suburb
-            suburb_name = address.replace('add_suburb', data_file['Suburb/Town'][i])
-            # insert library phone for the final edit and store it in final_object (unique info for each)
-            final_object = suburb_name.replace('add_phone', data_file['Phone'][i])
-
-            # return cursor to the beginning of the file
-            template.seek(0)
-
-            cate = filter(str.isalnum, data_file['Categories'][i])# clean category string
-
-            # store all libraries as a list with category and title for the post
-            list_library.append([final_object, data_file['Locality Name'][i] + ' Library', "".join(cate)])
-
-        return list_library
-
+    elif file == 'Sports':
+        return tp.sport_prepare(data_file, template)
 
 
 
@@ -53,13 +32,13 @@ def insert_data(file):
 
 def main():
     # load place processed open data files in CSV format
-    files = ['Library'] # ['Library', '']
+    files = ['Sports'] # ['Library', 'Sports']
 
     # loop throw files and open consponder template
     for file in files:
         final_template = insert_data(file)
-        #client = wp.connect_to_wordpress_api()
-        #check = wp.create_new_post(client,final_template)
+        client = wp.connect_to_wordpress_api()
+        wp.create_new_post(client,final_template)
 
 
 

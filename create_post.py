@@ -20,6 +20,8 @@ cat.taxonomy = 'category'
 cat.name = 'python category'
 cat.id = client.call(taxonomies.NewTerm(cat))
 pp.pprint(cat.id) 562'''
+
+
 # list_library.append([final_object, data_file['Locality Name'][i] + ' Library', data_file['Categories'][i]])
 def create_new_post(client, post_list):
 
@@ -30,9 +32,9 @@ def create_new_post(client, post_list):
                 newPost.content = post[0]
                 newPost.post_status = 'publish'
                 newPost.terms_names = {
-                'category': [post[2]]
+                'category': post[2]
                 }
-                newPost.thumbnail = 562
+                newPost.thumbnail = post[3]
                 
                 client.call(posts.NewPost(newPost))
 
