@@ -1,0 +1,612 @@
+,Municipality,Suburb
+0,casey city council,botanic ridge
+1,casey city council,berwick
+2,port phillip city council,st kilda
+3,melbourne city council,south yarra
+4,hobsons bay city council,williamstown
+5,mornington peninsula shire council,cape schanck
+6,mornington peninsula shire council,flinders
+7,mornington peninsula shire council,boneo
+8,mornington peninsula shire council,portsea
+9,casey city council,endeavour hills
+10,yarra ranges shire council,the basin
+11,yarra ranges shire council,lysterfield
+12,bayside city council,beaumaris
+13,brimbank city council,bulla
+14,nillumbik shire council,steels creek
+15,wyndham city council,point cook
+16,hume city council,melbourne airport
+17,hobsons bay city council,altona meadows
+18,hobsons bay city council,altona
+19,hobsons bay city council,altona north
+20,hobsons bay city council,williamstown north
+21,hobsons bay city council,seaholme
+22,hobsons bay city council,newport
+23,hobsons bay city council,laverton
+24,hobsons bay city council,brooklyn
+25,hobsons bay city council,spotswood
+26,hobsons bay city council,south kingsville
+27,hobsons bay city council,seabrook
+28,hobsons bay city council,port melbourne
+29,mornington peninsula shire council,mornington
+30,mornington peninsula shire council,main ridge
+31,mornington peninsula shire council,mount eliza
+32,mornington peninsula shire council,hastings
+33,mornington peninsula shire council,balnarring
+34,mornington peninsula shire council,rye
+35,mornington peninsula shire council,baxter
+36,mornington peninsula shire council,mount martha
+37,mornington peninsula shire council,red hill
+38,mornington peninsula shire council,somers
+39,mornington peninsula shire council,rosebud
+40,mornington peninsula shire council,somerville
+41,mornington peninsula shire council,mccrae
+42,mornington peninsula shire council,balnarring beach
+43,mornington peninsula shire council,crib point
+44,mornington peninsula shire council,arthurs seat
+45,mornington peninsula shire council,dromana
+46,mornington peninsula shire council,merricks north
+47,mornington peninsula shire council,tyabb
+48,mornington peninsula shire council,blairgowrie
+49,mornington peninsula shire council,sorrento
+50,mornington peninsula shire council,moorooduc
+51,mornington peninsula shire council,safety beach
+52,mornington peninsula shire council,bittern
+53,mornington peninsula shire council,tootgarook
+54,mornington peninsula shire council,red hill south
+55,mornington peninsula shire council,shoreham
+56,mornington peninsula shire council,point leo
+57,mornington peninsula shire council,capel sound
+58,mornington peninsula shire council,tuerong
+59,casey city council,narre warren north
+60,casey city council,cranbourne
+61,casey city council,narre warren
+62,casey city council,lynbrook
+63,casey city council,cranbourne west
+64,casey city council,doveton
+65,casey city council,hallam
+66,casey city council,cranbourne north
+67,casey city council,eumemmerring
+68,casey city council,lyndhurst
+69,casey city council,cranbourne south
+70,casey city council,pearcedale
+71,casey city council,narre warren south
+72,casey city council,hampton park
+73,maribyrnong city council,maidstone
+74,maribyrnong city council,west footscray
+75,maribyrnong city council,yarraville
+76,maribyrnong city council,braybrook
+77,maribyrnong city council,footscray
+78,maribyrnong city council,maribyrnong
+79,maroondah city council,ringwood east
+80,maroondah city council,croydon
+81,maroondah city council,kilsyth south
+82,maroondah city council,ringwood north
+83,maroondah city council,mooroolbark
+84,maroondah city council,ringwood
+85,maroondah city council,croydon south
+86,maroondah city council,croydon north
+87,maroondah city council,croydon hills
+88,maroondah city council,bayswater north
+89,maroondah city council,heathmont
+90,maroondah city council,kilsyth
+91,maroondah city council,warranwood
+92,moonee valley city council,airport west
+93,moonee valley city council,aberfeldie
+94,moonee valley city council,ascot vale
+95,moonee valley city council,strathmore heights
+96,moonee valley city council,essendon
+97,moonee valley city council,essendon west
+98,moonee valley city council,travancore
+99,moonee valley city council,pascoe vale south
+100,moonee valley city council,flemington
+101,moonee valley city council,avondale heights
+102,moonee valley city council,moonee ponds
+103,moonee valley city council,strathmore
+104,moonee valley city council,keilor east
+105,banyule city council,watsonia
+106,banyule city council,eaglemont
+107,banyule city council,greensborough
+108,banyule city council,heidelberg
+109,banyule city council,viewbank
+110,banyule city council,watsonia north
+111,banyule city council,ivanhoe east
+112,banyule city council,rosanna
+113,banyule city council,macleod
+114,banyule city council,ivanhoe
+115,banyule city council,lower plenty
+116,banyule city council,heidelberg west
+117,banyule city council,bellfield
+118,banyule city council,montmorency
+119,banyule city council,bundoora
+120,banyule city council,eltham north
+121,banyule city council,heidelberg heights
+122,banyule city council,st helena
+123,moreland city council,coburg north
+124,moreland city council,brunswick
+125,moreland city council,brunswick east
+126,moreland city council,brunswick west
+127,moreland city council,fawkner
+128,moreland city council,coburg
+129,moreland city council,glenroy
+130,moreland city council,oak park
+131,moreland city council,pascoe vale
+132,moreland city council,hadfield
+133,darebin city council,northcote
+134,darebin city council,reservoir
+135,darebin city council,kingsbury
+136,darebin city council,preston
+137,darebin city council,thornbury
+138,darebin city council,alphington
+139,yarra ranges shire council,tremont
+140,yarra ranges shire council,sassafras
+141,yarra ranges shire council,belgrave south
+142,yarra ranges shire council,belgrave
+143,yarra ranges shire council,mount evelyn
+144,yarra ranges shire council,the patch
+145,yarra ranges shire council,menzies creek
+146,yarra ranges shire council,badger creek
+147,yarra ranges shire council,mcmahons creek
+148,yarra ranges shire council,olinda
+149,yarra ranges shire council,yarra junction
+150,yarra ranges shire council,dixons creek
+151,yarra ranges shire council,healesville
+152,yarra ranges shire council,ferny creek
+153,yarra ranges shire council,montrose
+154,yarra ranges shire council,sherbrooke
+155,yarra ranges shire council,upper ferntree gully
+156,yarra ranges shire council,mount dandenong
+157,yarra ranges shire council,kalorama
+158,yarra ranges shire council,chirnside park
+159,yarra ranges shire council,selby
+160,yarra ranges shire council,lilydale
+161,yarra ranges shire council,upwey
+162,yarra ranges shire council,coldstream
+163,yarra ranges shire council,albanvale
+164,yarra ranges shire council,yellingbo
+165,frankston city council,frankston
+166,frankston city council,frankston south
+167,frankston city council,seaford
+168,frankston city council,carrum downs
+169,frankston city council,frankston north
+170,frankston city council,langwarrin
+171,frankston city council,skye
+172,whitehorse city council,vermont
+173,whitehorse city council,mitcham
+174,whitehorse city council,burwood east
+175,whitehorse city council,burwood
+176,whitehorse city council,blackburn
+177,whitehorse city council,surrey hills
+178,whitehorse city council,box hill north
+179,whitehorse city council,box hill
+180,whitehorse city council,mont albert north
+181,whitehorse city council,box hill south
+182,whitehorse city council,blackburn north
+183,whitehorse city council,nunawading
+184,whitehorse city council,balwyn
+185,whitehorse city council,vermont south
+186,whitehorse city council,blackburn south
+187,boroondara city council,kew
+188,boroondara city council,hawthorn east
+189,boroondara city council,ashburton
+190,boroondara city council,glen iris
+191,boroondara city council,hawthorn
+192,boroondara city council,deepdene
+193,boroondara city council,balwyn north
+194,boroondara city council,canterbury
+195,boroondara city council,camberwell
+196,boroondara city council,kew east
+197,greater dandenong city council,keysborough
+198,greater dandenong city council,dandenong
+199,greater dandenong city council,noble park
+200,greater dandenong city council,springvale south
+201,greater dandenong city council,dandenong north
+202,greater dandenong city council,springvale
+203,manningham city council,park orchards
+204,manningham city council,north warrandyte
+205,manningham city council,templestowe
+206,manningham city council,doncaster east
+207,manningham city council,wonga park
+208,manningham city council,donvale
+209,manningham city council,templestowe lower
+210,manningham city council,warrandyte
+211,manningham city council,doncaster
+212,manningham city council,bulleen
+213,knox city council,rowville
+214,knox city council,wantirna south
+215,knox city council,scoresby
+216,knox city council,bayswater
+217,knox city council,ferntree gully
+218,knox city council,knoxfield
+219,knox city council,wantirna
+220,knox city council,boronia
+221,port phillip city council,middle park
+222,port phillip city council,albert park
+223,port phillip city council,balaclava
+224,port phillip city council,south melbourne
+225,port phillip city council,elwood
+226,bayside city council,hampton
+227,bayside city council,hampton east
+228,bayside city council,brighton east
+229,bayside city council,brighton
+230,bayside city council,sandringham
+231,bayside city council,highett
+232,bayside city council,cheltenham
+233,bayside city council,black rock
+234,melbourne city council,carlton
+235,melbourne city council,kensington
+236,melbourne city council,north melbourne
+237,melbourne city council,melbourne city
+238,melbourne city council,docklands
+239,melbourne city council,east melbourne
+240,melbourne city council,parkville
+241,melbourne city council,west melbourne
+242,melbourne city council,southbank
+243,melbourne city council,carlton north
+244,brimbank city council,ardeer
+245,brimbank city council,sunshine
+246,brimbank city council,st albans
+247,brimbank city council,derrimut
+248,brimbank city council,albion
+249,brimbank city council,kealba
+250,brimbank city council,deer park
+251,brimbank city council,keilor
+252,brimbank city council,keilor park
+253,brimbank city council,cairnlea
+254,brimbank city council,taylors lakes
+255,brimbank city council,keilor downs
+256,brimbank city council,delahey
+257,brimbank city council,kings park
+258,brimbank city council,sunshine west
+259,brimbank city council,sunshine north
+260,brimbank city council,sydenham
+261,brimbank city council,hillside
+262,brimbank city council,keilor lodge
+263,nillumbik shire council,eltham
+264,nillumbik shire council,hurstbridge
+265,nillumbik shire council,panton hill
+266,nillumbik shire council,diamond creek
+267,nillumbik shire council,plenty
+268,nillumbik shire council,yarrambat
+269,kingston city council,aspendale
+270,kingston city council,heatherton
+271,kingston city council,bonbeach
+272,kingston city council,parkdale
+273,kingston city council,braeside
+274,kingston city council,mordialloc
+275,kingston city council,dingley village
+276,kingston city council,edithvale
+277,kingston city council,moorabbin
+278,kingston city council,patterson lakes
+279,kingston city council,clayton south
+280,kingston city council,mentone
+281,kingston city council,aspendale gardens
+282,kingston city council,oakleigh south
+283,kingston city council,clarinda
+284,yarra city council,richmond
+285,yarra city council,clifton hill
+286,yarra city council,fitzroy north
+287,yarra city council,fairfield
+288,yarra city council,burnley
+289,monash city council,glen waverley
+290,monash city council,wheelers hill
+291,monash city council,mount waverley
+292,monash city council,ashwood
+293,monash city council,clayton
+294,monash city council,chadstone
+295,monash city council,notting hill
+296,wyndham city council,little river
+297,wyndham city council,werribee
+298,wyndham city council,werribee south
+299,wyndham city council,hoppers crossing
+300,wyndham city council,tarneit
+301,wyndham city council,wyndham vale
+302,wyndham city council,laverton north
+303,whittlesea city council,epping
+304,whittlesea city council,kinglake west
+305,whittlesea city council,lalor
+306,whittlesea city council,south morang
+307,stonnington city council,malvern east
+308,stonnington city council,malvern
+309,stonnington city council,kooyong
+310,stonnington city council,toorak
+311,stonnington city council,armadale
+312,hume city council,sunbury
+313,hume city council,broadmeadows
+314,hume city council,meadow heights
+315,hume city council,tullamarine
+316,hume city council,greenvale
+317,hume city council,gladstone park
+318,hume city council,dallas
+319,hume city council,roxburgh park
+320,hume city council,westmeadows
+321,hume city council,coolaroo
+322,hume city council,jacana
+323,hume city council,campbellfield
+324,melton city council,melton south
+325,melton city council,taylors hill
+326,melton city council,burnside heights
+327,melton city council,kurunjang
+328,melton city council,harkness
+329,melton city council,melton west
+330,melton city council,strathtulloh
+331,melton city council,brookfield
+332,melton city council,eynesbury
+333,melton city council,diggers rest
+334,melton city council,caroline springs
+335,melton city council,cobblebank
+336,melton city council,burnside
+337,melton city council,weir views
+338,melton city council,rockbank
+339,melton city council,mount cottrell
+340,melton city council,thornhill park
+341,mitchell shire council,seymour
+342,mitchell shire council,heathcote
+343,glen eira city council,glen huntly
+344,glen eira city council,caulfield north
+345,glen eira city council,bentleigh east
+346,glen eira city council,murrumbeena
+347,glen eira city council,ormond
+348,glen eira city council,carnegie
+349,yarra city council,fitzroy
+350,yarra city council,abbotsford
+351,yarra city council,collingwood
+352,yarra city council,princes hill
+353,yarra city council,princess hill
+354,yarra city council,cremorne
+355,moonee valley city council,niddrie
+356,moonee valley city council,east keilor
+357,moonee valley city council,north essendon
+358,melton city council,melton
+359,melton city council,ravenhall
+360,melton city council,toorlern vale
+361,brimbank city council,kelba
+362,port phillip city council,st kilda east
+363,port phillip city council,stkilda
+364,darebin city council,keon park
+365,darebin city council,west preston
+366,stonnington city council,east malvern
+367,stonnington city council,prahran
+368,stonnington city council,windsor
+369,nillumbik shire council,research
+370,nillumbik shire council,wattle glen
+371,nillumbik shire council,arthurs creek
+372,nillumbik shire council,kangaroo ground
+373,nillumbik shire council,st andrews
+374,nillumbik shire council,strathewen
+375,nillumbik shire council,christmas hills
+376,mornington peninsula shire council,sommerville
+377,mornington peninsula shire council,merricks
+378,mornington peninsula shire council,st andrews beach
+379,mornington peninsula shire council,hmas cerberus
+380,mornington peninsula shire council,rosebud west
+381,mornington peninsula shire council,cape schank
+382,mornington peninsula shire council,mt eliza
+384,mornington peninsula shire council,merricks beach
+385,mornington peninsula shire council,fingal
+386,boroondara city council,north balwyn
+387,monash city council,wodonga
+388,monash city council,oakleigh
+389,monash city council,huntingdale
+390,monash city council,mt waverley
+391,monash city council,mulgrave
+392,kingston city council,chelsea heights
+393,kingston city council,carrum
+394,kingston city council,chelsea
+395,hume city council,somerton
+396,hume city council,craigieburn
+397,hume city council,donnybrook
+398,hume city council,gisborne south
+399,hume city council,gisborne
+400,mitchell shire council,wallan
+401,mitchell shire council,kilmore
+402,mitchell shire council,broadford
+403,mitchell shire council,wandong
+404,mitchell shire council,tallarook
+405,mitchell shire council,pyalong
+406,cardinia shire council,bunyip
+407,cardinia shire council,cockatoo
+408,cardinia shire council,beaconsfield
+409,cardinia shire council,avonsleigh
+410,cardinia shire council,cora lynn
+411,cardinia shire council,garfield
+412,cardinia shire council,gembrook
+413,cardinia shire council,koo wee rup
+414,cardinia shire council,lang lang
+415,cardinia shire council,nar nar goon
+416,cardinia shire council,officer
+417,cardinia shire council,upper beaconsfield
+418,cardinia shire council,emerald
+419,cardinia shire council,pakenham
+420,cardinia shire council,cardinia
+421,cardinia shire council,maryknoll
+422,cardinia shire council,pakenham upper
+423,cardinia shire council,pakenham south
+424,cardinia shire council,tynong
+425,cardinia shire council,beaconsfield upper
+426,cardinia shire council,modella
+427,cardinia shire council,garfield north
+428,cardinia shire council,nar nar goon north
+429,cardinia shire council,guys hill
+430,cardinia shire council,yannathan
+431,yarra ranges shire council,monbulk
+432,yarra ranges shire council,narre warren east
+433,yarra ranges shire council,powelltown
+434,yarra ranges shire council,seville
+435,yarra ranges shire council,silvan
+436,yarra ranges shire council,wandin east
+437,yarra ranges shire council,wandin north
+438,yarra ranges shire council,warburton
+439,yarra ranges shire council,wesburn
+440,yarra ranges shire council,lauching place
+441,yarra ranges shire council,woori yallock
+442,yarra ranges shire council,yarra glen
+443,yarra ranges shire council,gladysdale
+444,yarra ranges shire council,gruyere
+445,yarra ranges shire council,hoddles creek
+446,yarra ranges shire council,millgrove
+447,yarra ranges shire council,macclesfield
+448,yarra ranges shire council,yering
+449,yarra ranges shire council,croyden
+450,whitehorse city council,bennettswood
+451,whitehorse city council,forest hill
+452,whitehorse city council,mont albert
+453,greater dandenong city council,noble park north
+454,greater dandenong city council,bangholme
+455,greater dandenong city council,dandenong south
+456,casey city council,cranbourne east
+457,casey city council,clyde
+458,casey city council,deavon meadows
+459,casey city council,tooradin
+460,casey city council,warneet
+461,casey city council,junction village
+462,casey city council,clyde north
+463,casey city council,harkaway
+464,bayside city council,elsternwick
+465,bayside city council,north brighton
+466,bayside city council,beaumoris
+467,banyule city council,west heidelberg
+468,banyule city council,east ivanhoe vic
+469,banyule city council,yallambie
+470,glen eira city council,bentleigh
+471,glen eira city council,caulfield
+472,glen eira city council,mckinnon
+473,glen eira city council,caulfield east
+474,glen eira city council,caulfield south
+475,whittlesea city council,humevale
+476,whittlesea city council,whittlesea
+477,whittlesea city council,thomastown
+478,whittlesea city council,mill park
+479,whittlesea city council,doreen
+480,whittlesea city council,mernda
+481,whittlesea city council,wollert
+482,whittlesea city council,yan yean
+483,moreland city council,coburg west
+484,moreland city council,gowanbrae
+485,manningham city council,east doncaster
+486,manningham city council,south warrandyte
+487,manningham city council,lower templestowe
+488,melbourne city council,melbourne
+489,melbourne city council,south kensington
+490,frankston city council,franskton south
+491,frankston city council,sandhurst
+492,wyndham city council,truganina
+493,maribyrnong city council,kingsville
+494,yarra ranges shire council,belgrave heights
+495,wyndham city council,quandong
+496,wyndham city council,manor lakes
+497,whittlesea city council,beveridge
+498,whittlesea city council,woodstock
+499,hume city council,wildwood
+500,hume city council,mickleham
+501,melton city council,bonnie brook
+502,mitchell shire council,clonbinane
+503,mitchell shire council,sugarloaf creek
+504,mitchell shire council,kilmore east
+505,mitchell shire council,tooborac
+506,mitchell shire council,highlands
+507,mitchell shire council,puckapunyal
+508,mitchell shire council,willowmavin
+509,mitchell shire council,hilldene
+510,mitchell shire council,whiteheads creek
+511,mitchell shire council,upper plenty
+512,yarra ranges shire council,noojee
+513,mitchell shire council,avenel
+514,kingston city council,waterways
+515,moonee valley city council,essendon fields
+516,moonee valley city council,essendon north
+517,melton city council,aintree
+518,melton city council,deanside
+519,melton city council,exford
+520,melton city council,fieldstone
+521,melton city council,fraser rise
+522,melton city council,grangefields
+523,melton city council,parwan
+524,melton city council,plumpton
+525,melton city council,toolern vale
+526,brimbank city council,keilor north
+527,port phillip city council,ripponlea
+528,port phillip city council,st kilda west
+529,nillumbik shire council,bend of islands
+530,nillumbik shire council,cottles bridge
+531,nillumbik shire council,nutfield
+532,nillumbik shire council,smiths gully
+533,nillumbik shire council,watsons creek
+534,monash city council,hughesdale
+535,monash city council,oakleigh east
+536,kingston city council,moorabbin airport
+537,hume city council,attwood
+538,hume city council,clarkefield
+539,hume city council,kalkallo
+540,hume city council,oaklands junction
+541,hume city council,yuroke
+542,mitchell shire council,bylands
+543,mitchell shire council,forbes
+544,mitchell shire council,glenaroua
+545,mitchell shire council,glenhope
+546,mitchell shire council,glenhope east
+547,mitchell shire council,heathcote junction
+548,mitchell shire council,heathcote south
+549,mitchell shire council,high camp
+550,mitchell shire council,mangalore
+551,mitchell shire council,mia mia
+552,mitchell shire council,moranding
+553,mitchell shire council,northwood
+554,mitchell shire council,nulla vale
+555,mitchell shire council,reedy creek
+556,mitchell shire council,sunday creek
+557,mitchell shire council,tarcombe
+558,mitchell shire council,trawool
+559,mitchell shire council,tyaak
+560,mitchell shire council,waterford park
+561,cardinia shire council,bayles
+562,cardinia shire council,bunyip north
+563,cardinia shire council,caldermeade
+564,cardinia shire council,catani
+565,cardinia shire council,clematis
+566,cardinia shire council,dalmore
+567,cardinia shire council,dewhurst
+568,cardinia shire council,heath hill
+569,cardinia shire council,iona
+570,cardinia shire council,koo wee rup north
+571,cardinia shire council,lang lang east
+572,cardinia shire council,longwarry
+573,cardinia shire council,monomeith
+574,cardinia shire council,mount burnett
+575,cardinia shire council,nangana
+576,cardinia shire council,nyora
+577,cardinia shire council,officer south
+578,cardinia shire council,rythdale
+579,cardinia shire council,tonimbuk
+580,cardinia shire council,tynong north
+581,cardinia shire council,vervale
+582,yarra ranges shire council,beenak
+583,yarra ranges shire council,big pats creek
+584,yarra ranges shire council,chum creek
+585,yarra ranges shire council,don valley
+586,yarra ranges shire council,east warburton
+587,yarra ranges shire council,gilderoy
+588,yarra ranges shire council,kallista
+589,yarra ranges shire council,launching place
+590,yarra ranges shire council,matlock
+591,yarra ranges shire council,mount toolebewong
+592,yarra ranges shire council,reefton
+593,yarra ranges shire council,seville east
+594,yarra ranges shire council,tarrawarra
+595,yarra ranges shire council,tecoma
+596,yarra ranges shire council,three bridges
+597,yarra ranges shire council,toolangi
+598,casey city council,blind bight
+599,casey city council,cannons creek
+600,casey city council,devon meadows
+601,casey city council,lysterfield south
+602,banyule city council,briar hill
+603,glen eira city council,gardenvale
+605,whittlesea city council,eden park
+606,maribyrnong city council,seddon
+607,maribyrnong city council,tottenham
+608,manningham city council,warrandyte south
+609,melbourne city council,south wharf
+610,frankston city council,langwarrin south
+611,wyndham city council,mambourin
+612,wyndham city council,williams landing

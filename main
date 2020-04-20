@@ -12,7 +12,9 @@ pd.set_option('display.width', 1000)
 def insert_data(file):
 
     # open the open data file
-    data_file = pd.read_csv('Output_files/' + file + '_copy.csv')
+    data_file = pd.read_csv('Output_files/' + file + '_new.csv')
+    # standardize the categories
+    data_file['Categories'] = data_file['Categories'].str.lower()
 
     # open the theme to be inserted into a post
     template = open('Template/' + file + '_template.txt')
@@ -25,6 +27,8 @@ def insert_data(file):
 
     elif file == 'Sports':
         return tp.sport_prepare(data_file, template)
+    #elif file == 'Tourist':
+
 
 
 
@@ -32,9 +36,9 @@ def insert_data(file):
 
 def main():
     # load place processed open data files in CSV format
-    files = ['Sports'] # ['Library', 'Sports']
+    files = ['Library', 'Sports'] # ['Library', 'Sports', 'Tourist']
 
-    # loop throw files and open consponder template
+    # loop throw files and open cosponder template
     for file in files:
         final_template = insert_data(file)
         client = wp.connect_to_wordpress_api()

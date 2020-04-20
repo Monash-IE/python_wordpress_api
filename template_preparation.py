@@ -1,6 +1,7 @@
 import re
 import ast
 
+# prepare library post
 def library_prepare(data_file, template):
     # list of library to be passed to the API
     list_library = []
@@ -11,13 +12,13 @@ def library_prepare(data_file, template):
         temp_template = template.read()
 
         # insert library name
-        lib_name = temp_template.replace('LIBRARY_NAME', data_file['Locality Name'][i] + ' Library')
+        lib_name = temp_template.replace('LIBRARY_NAME', data_file['Suburb'][i] + ' Library')
         # insert library address
-        address = lib_name.replace('add_address', data_file['Address'][i])
+        address = lib_name.replace('add_address', str(data_file['Address'][i]))
         # insert library suburb
-        suburb_name = address.replace('add_suburb', data_file['Suburb/Town'][i])
+        suburb_name = address.replace('add_suburb', data_file['Suburb'][i])
         # insert library phone for the final edit and store it in final_object (unique info for each)
-        final_object = suburb_name.replace('add_phone', data_file['Phone'][i])
+        final_object = suburb_name.replace('add_phone', str(data_file['Phone'][i]))
 
         # return cursor to the beginning of the file
         template.seek(0)
@@ -25,12 +26,25 @@ def library_prepare(data_file, template):
         # Clean category string
         categories = ast.literal_eval(data_file['Categories'][i])
 
+        # create the category unique name
+        s_cat = ''
+        for j in categories:
+            s_cat = s_cat+j+'-'
+
+        # get tags (all but cities and suburbs)
+        tags = categories[2:]
+        categories = categories[:3]
+
+        # add to the list of categories
+        categories.append(s_cat)
+
         # store all libraries as a list with category and title for the post
-        list_library.append([final_object, data_file['Locality Name'][i] + ' Library', categories, 562])
+        list_library.append([final_object, data_file['Suburb'][i] + ' Library', categories, tags])
 
     return list_library
 
 
+# Prepare sport posts
 def sport_prepare(data_file, template):
     # list of sports centers to be passed to the API
 
@@ -66,6 +80,19 @@ def sport_prepare(data_file, template):
         # Clean category string
         categories = ast.literal_eval(data_file['Categories'][i])
 
-        list_sport.append([final_object, data_file['Place Name'][i], categories, 570])
+        # create the category unique name
+        s_cat = ''
+        for j in categories:
+            s_cat = s_cat+j+'-'
+
+        # get tags (all but cities and suburbs)
+        tags = categories[2:]
+        categories = categories[:3]
+
+        # add the specal category to the list of categores
+        categories.append(s_cat)
+
+        list_sport.append([final_object, data_file['Place Name'][i], categories, tags])
+
 
     return list_sport
