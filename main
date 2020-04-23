@@ -21,22 +21,29 @@ def insert_data(file):
 
     # check the type of the post
 
-    if file == 'Library':
+    if file == 'library':
         # call library prepare
         return tp.library_prepare(data_file, template)
 
-    elif file == 'Sports':
+    elif file == 'sports':
         return tp.sport_prepare(data_file, template)
-    #elif file == 'Tourist':
 
+    elif file == 'tourist':
+        return tp.tourist_prepare(data_file, template)
 
+    elif file == 'nature':
+        return tp.nature_prepare(data_file, template)
+
+    elif file == 'worship':
+        return tp.worship_prepare(data_file, template)
 
 
 
 
 def main():
+
     # load place processed open data files in CSV format
-    files = ['Library', 'Sports'] # ['Library', 'Sports', 'Tourist']
+    files = ['worship'] # ['library', 'sports', 'tourist', nature]
 
     # loop throw files and open cosponder template
     for file in files:

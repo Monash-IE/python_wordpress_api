@@ -1,9 +1,7 @@
 [ux_banner height="480px" height__sm="60%" bg="577" bg_size="original" bg_color="#ce9682" bg_pos="62% 60%"]
 
 [text_box text_color="dark" width="45" width__sm="90" scale__sm="80" padding="30px 30px 30px 30px" position_x="5" position_y="50" position_y__sm="95" text_align="left" bg="rgba(255, 255, 255, 0.9)" depth="1"]
-
-<h3 class="uppercase"><span style="font-size: 150%; color: #eba459;">tourist name</span></h3>
-
+<h3 class="uppercase"><span style="font-size: 150%; color: #eba459;">tourist_name</span></h3>
 [/text_box]
 
 [/ux_banner]
@@ -14,10 +12,8 @@
 [row style="large" v_align="middle"]
 
 [col span__sm="12" align="left"]
-
 <h2 class="uppercase" style="text-align: center;">historical information</h2>
-<p style="text-align: center;">insert <span style="text-decoration: underline;">historial information</span> here, (if the data is null, Julie will write later)</p>
-
+<p style="text-align: center;">add_history</p>
 [/col]
 
 [/row]
@@ -28,15 +24,12 @@
 [row style="large" v_align="middle" h_align="center"]
 
 [col span="6" span__sm="12" padding="15px 15px 15px 15px" bg_color="rgb(104, 228, 229)" depth="1" depth_hover="3"]
-
 <h2 class="uppercase"><span style="color: #333333;">How to contact?</span></h2>
-
 [/col]
 [col span="6" span__sm="12" align="center"]
-
-<h4 style="text-align: left;">Address:</h4>
-<h4 style="text-align: left;">URL:</h4>
-
+<h4 style="text-align: left;">Address: add_suburb, add_city</h4>
+<h4 style="text-align: left;">URL: add_url</h4>
+<h4 style="text-align: left;">Place Type: add_type</h4>
 [/col]
 
 [/row]

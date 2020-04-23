@@ -45,6 +45,7 @@ def create_new_post(client, post_list):
     # work with each post
     for post in post_list:
 
+        # if the sub-category under the special category (special_cat) does not exit create it
         if str(post[2][-1]) not in list_all_cate:
 
             print('does not exist: ' + str(post[2][-1]))
@@ -135,24 +136,32 @@ def create_city_suburb_categories(client):
 
 # verify the city and suburb duplication before implementation
 def check_dublicat_city_or_suburb(client):
+
+    # load categories (city and suburb)
     taxes = client.call(taxonomies.GetTerms('category'))
+
+    # clean the return data and add them to list
     list_all_cate = []
     for taxe in taxes:
         list_all_cate.append(str(taxe))
 
+    # open the target file to check
     data_file = pd.read_csv('Output_files/Worship_new.csv')
+
+    # standardize the text into lower case
     data_file['Categories'] = data_file['Categories'].str.lower()
 
+    # compare the one from the website and the target file
     for row in range(0, len(data_file)):
 
         city = ast.literal_eval(data_file['Categories'][row])[0]
         suburb = ast.literal_eval(data_file['Categories'][row])[1]
 
         if str(city) not in list_all_cate:
-            print('new one ! = ' + city)
+            print('new city=' + city +'|')
 
         if str(suburb) not in list_all_cate:
-            print('new one ! = ' + suburb)
+            print('new suburb = ' + suburb)
     print('Good Job')
 
 def check_dublicate_post_name(client):
@@ -180,7 +189,7 @@ def main():
         #create_city_suburb_categories(client)
 
         # validate datasets categories
-        #check_dublicat_city_or_suburb(client)
+        check_dublicat_city_or_suburb(client)
 
         # validate duplicate posts
         #check_dublicate_post_name(client)
