@@ -3,11 +3,14 @@ from mysql.connector import Error
 from mysql.connector import errorcode
 
 try:
+
+    # connect to the database
     connection = mysql.connector.connect(host='localhost',
                                          database='b11DB_test_1',
                                          user='b11test_user',
-                                         password='8338818bB!')
+                                         password='*******')
 
+    # Insert the coordinates to the right tables
     mySql_insert_query = """INSERT INTO wp_novomap_marker (time, post_id, is_main, title, 
                             categories, tags, latitude, longitude, marker_logo_id, infobox_description, 
                             infobox_image, infobox_style) 
@@ -16,6 +19,7 @@ try:
                            ,'a:1:{i:4;s:14:"test-test-boss";}', 'a:0:{}', 4444, 6666, 2, '', -1,
                            'novo-map_infobox_style_default') """
 
+    # execute the query and commit the database
     cursor = connection.cursor()
     cursor.execute(mySql_insert_query)
     connection.commit()
@@ -23,4 +27,6 @@ try:
     cursor.close()
 
 except mysql.connector.Error as error:
+    
+    # show message when getting errors
     print("Failed to insert record into Laptop table {}".format(error))
