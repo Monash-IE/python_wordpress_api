@@ -1,8 +1,8 @@
-[ux_banner height="480px" height__sm="60%" bg="570" bg_size="original" bg_color="#ce9682" bg_pos="62% 60%"]
+[ux_banner height="50%" height__sm="60%" bg="13177" bg_size="original" bg_color="#ce9682" bg_pos="62% 60%"]
 
-[text_box text_color="dark" width="44" width__sm="90" scale__sm="80" padding="30px 30px 30px 30px" position_x="95" position_x__sm="95" position_y="50" position_y__sm="95" text_align="left" bg="rgba(255, 255, 255, 0.9)" depth="1"]
+[text_box text_color="dark" width="55" width__sm="90" width__md="60" scale__sm="80" padding="30px 20px 30px 20px" position_x="95" position_x__sm="95" position_y="50" position_y__sm="95" text_align="left" bg="rgba(255, 255, 255, 0.9)" depth="1"]
 
-<h3 class="uppercase"><span style="font-size: 150%; color: #333333;"> sport_centre_name </span></h3>
+<h3 class="uppercase"><span style="font-size: 135%; color: #333333;">sport_centre_name</span></h3>
 
 [/text_box]
 
@@ -18,15 +18,15 @@
 [/col]
 [col span="6" span__sm="12"]
 
-<p> Facility Condition Grade: add_facility_condition </p>
-<p> Change Rooms: add_changerooms </p>
-<p> Field Surface Type: add_field_Surface </p>
+<p>Facility Condition Grade: add_facility_condition</p>
+<p>Change Rooms: add_changerooms</p>
+<p>Field Surface Type: add_field_Surface</p>
 
 [/col]
 [col span="6" span__sm="12"]
 
-<p> Number of Field Courts: add_field_courts </p>
-<p> Sports Played: add_sports played </p>
+<p>Number of Field Courts: add_field_courts</p>
+<p>Sports Played: add_sports played</p>
 
 [/col]
 
@@ -44,15 +44,11 @@
 [/col]
 [col span="6" span__sm="12" align="center"]
 
-<h4 style="text-align: left;">Address: add_address </h4>
+<h4 style="text-align: left;">Address: add_address</h4>
 
 [/col]
 
 [/row]
 
 [/section]
-[gap]
-
-[block id="672"]
-
-[gap height="10px"]
+[gap height="40px"]

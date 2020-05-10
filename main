@@ -12,7 +12,7 @@ pd.set_option('display.width', 1000)
 def insert_data(file):
 
     # open the open data file
-    data_file = pd.read_csv('Output_files/' + file + '_new.csv')
+    data_file = pd.read_csv('Output_files/' + file + '.csv')
     # standardize the categories
     data_file['Categories'] = data_file['Categories'].str.lower()
 
@@ -37,13 +37,19 @@ def insert_data(file):
     elif file == 'worship':
         return tp.worship_prepare(data_file, template)
 
+    elif file == 'volunteers':
+        return tp.volunteers_prepare(data_file, template)
+
+    elif file == 'clubs':
+        return tp.clubs_prepare(data_file, template)
+
 
 
 
 def main():
 
     # load place processed open data files in CSV format
-    files = ['worship'] # ['library', 'sports', 'tourist', nature]
+    files = ['clubs'] # ['library', 'sports', 'tourist', nature, worship, volunteers]
 
     # loop throw files and open cosponder template
     for file in files:

@@ -27,16 +27,16 @@ def library_prepare(data_file, template):
         categories = ast.literal_eval(data_file['Categories'][i])
 
         # create the category unique name
-        s_cat = ''
+        '''s_cat = ''
         for j in categories:
-            s_cat = s_cat + j + '-'
+            s_cat = s_cat + j + '-'''
 
         # get tags (all but cities and suburbs)
         tags = categories[2:]
         categories = categories[:3]
 
         # add to the list of categories
-        categories.append(s_cat)
+        #categories.append(s_cat)
 
         # store all libraries as a list with category and title for the post
         list_library.append([final_object, data_file['Suburb'][i] + ' Library', categories, tags])
@@ -94,16 +94,15 @@ def sport_prepare(data_file, template):
         categories = ast.literal_eval(data_file['Categories'][i])
 
         # create the category unique name
-        s_cat = ''
+        '''s_cat = ''
         for j in categories:
-            s_cat = s_cat + j + '-'
+            s_cat = s_cat + j + '-'''
 
         # get tags (all but cities and suburbs)
-        tags = categories[2:]
-        categories = categories[:3]
+        tags = categories[2:3]
 
         # add the special category to the list of categores
-        categories.append(s_cat)
+        #categories.append(s_cat)
 
         list_sport.append([final_object, data_file['Place Name'][i], categories, tags])
 
@@ -157,16 +156,16 @@ def tourist_prepare(data_file, template):
         categories = ast.literal_eval(data_file['Categories'][i])
 
         # create the category unique name
-        s_cat = ''
+        '''s_cat = ''
         for j in categories:
-            s_cat = s_cat + j + '-'
+            s_cat = s_cat + j + '-'''
 
         # get tags (all but cities and suburbs)
         tags = categories[2:]
         categories = categories[:3]
 
         # add the special category to the list of categories
-        categories.append(s_cat)
+        #categories.append(s_cat)
 
         list_tourist.append([final_object, data_file['Place Name'][i], categories, tags])
 
@@ -220,16 +219,16 @@ def nature_prepare(data_file, template):
         categories = ast.literal_eval(data_file['Categories'][i])
 
         # create the category unique name
-        s_cat = ''
+        '''s_cat = ''
         for j in categories:
-            s_cat = s_cat + j + '-'
+            s_cat = s_cat + j + '-'''
 
         # get tags (all but cities and suburbs)
         tags = categories[2:]
         categories = categories[:4]
 
         # add the special category to the list of categories
-        categories.append(s_cat)
+        #categories.append(s_cat)
 
         list_nature.append([final_object, data_file['Place Name'][i], categories, tags])
 
@@ -278,17 +277,123 @@ def worship_prepare(data_file, template):
         categories = ast.literal_eval(data_file['Categories'][i])
 
         # create the category unique name
-        s_cat = ''
+        '''s_cat = ''
         for j in categories:
-            s_cat = s_cat + j + '-'
+            s_cat = s_cat + j + '-'''
 
         # get tags (all but cities and suburbs)
-        tags = categories[2:]
+        tags = categories[2:3]
         categories = categories[:3]
 
         # add the special category to the list of categories
-        categories.append(s_cat)
+        #categories.append(s_cat)
 
         list_worship.append([final_object, data_file['Place Name'][i], categories, tags])
 
     return list_worship
+
+
+# Prepare volunteers posts
+def volunteers_prepare(data_file, template):
+
+    # list of sports centers to be passed to the API
+    list_volunteers = []
+
+    # insert unique info for each object to the theme.
+    for i in range(0, len(data_file)):
+
+        # store a copy of the theme to be edit
+        temp_template = template.read()
+
+        # insert volunteer name
+        center_name = temp_template.replace('Volunteer_name', data_file['Name'][i])
+
+
+        # insert suburb
+        suburb = center_name.replace('add_suburb',
+                                      str(data_file['Suburb'][i]) if str(
+                                          data_file['Suburb'][i]) != 'nan' else 'No Available information')
+
+        # insert postcode
+        postcode = suburb.replace('add_postcode',
+                                      str(data_file['Postcode'][i]) if str(
+                                          data_file['Postcode'][i]) != 'nan' else 'No Available information')
+
+        # insert address
+        address = postcode.replace('add_address',
+                              str(data_file['Address'][i]) if str(
+                                  data_file['Address'][i]) != 'nan' else 'No Available information')
+
+        # insert the url to the final object to be added to the list of posts
+        final_object = address
+
+        # return cursor to the beginning of the file
+        template.seek(0)
+
+        # Clean category string
+        categories = ast.literal_eval(data_file['Categories'][i])
+
+        # get tags (all but cities and suburbs)
+        tags = categories[2:3]
+
+        list_volunteers.append([final_object, data_file['Name'][i], categories, tags])
+        print(list_volunteers)
+    return list_volunteers
+
+
+# Prepare clubs posts
+def clubs_prepare(data_file, template):
+
+    # list of sports centers to be passed to the API
+    list_clubs = []
+
+    # insert unique info for each object to the theme.
+    for i in range(0, len(data_file)):
+
+        # store a copy of the theme to be edit
+        temp_template = template.read()
+
+        # insert club name
+        center_name = temp_template.replace('club_name', data_file['Place Name'][i])
+
+        # insert time
+        time = center_name.replace('add_time',
+                                      str(data_file['Day'][i]) if str(
+                                          data_file['Day'][i]) != 'nan' else 'No Available information')
+
+        # insert phone
+        phone = time.replace('add_phone',
+                                      str(data_file['Phone Number'][i]) if str(
+                                          data_file['Phone Number'][i]) != 'nan' else 'No Available information')
+
+        # insert url
+        url = phone.replace('add_url',
+                                      str(data_file['URL'][i]) if str(
+                                          data_file['URL'][i]) != 'nan' else 'No Available information')
+
+        # insert description
+        desc = url.replace('add_desc',
+                                      str(data_file['Description'][i]) if str(
+                                          data_file['Description'][i]) != 'nan' else 'No Available information')
+
+
+        # insert address
+        address = desc.replace('add_address',
+                              str(data_file['Address'][i]) if str(
+                                  data_file['Address'][i]) != 'nan' else 'No Available information')
+
+        # insert the url to the final object to be added to the list of posts
+        final_object = address
+
+        # return cursor to the beginning of the file
+        template.seek(0)
+
+        # Clean category string
+        categories = ast.literal_eval(data_file['Categories'][i])
+
+        # get tags (all but cities and suburbs)
+        tags = categories[2:3]
+
+        list_clubs.append([final_object, data_file['Place Name'][i], categories, tags])
+    return list_clubs
+

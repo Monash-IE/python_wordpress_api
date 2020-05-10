@@ -30,6 +30,8 @@ def create_new_post(client, post_list):
     # Store categories in a list
     list_all_cate = []
     s_cat_id = ''
+    sports_cat_id = 7377
+    worship_cat_id = 7376
 
     for cat in cats:
 
@@ -46,19 +48,21 @@ def create_new_post(client, post_list):
     for post in post_list:
 
         # if the sub-category under the special category (special_cat) does not exit create it
-        if str(post[2][-1]) not in list_all_cate:
+        if post[2][-2] == 'sports':
 
-            print('does not exist: ' + str(post[2][-1]))
-            child_cat = WordPressTerm()
-            child_cat.taxonomy = 'category'
-            child_cat.parent = s_cat_id
-            # get the last element in the category list
-            child_cat.name = str(post[2][-1])
-            client.call(taxonomies.NewTerm(child_cat))
-            # Add the new category to the list
-            list_all_cate.append(str(post[2][-1]))
-        else:
-            print('looking good')
+            if str(post[2][-1]) not in list_all_cate:
+
+                print('does not exist: ' + str(post[2][-1]))
+                child_cat = WordPressTerm()
+                child_cat.taxonomy = 'category'
+                child_cat.parent = sports_cat_id
+                # get the last element in the category list
+                child_cat.name = str(post[2][-1])
+                client.call(taxonomies.NewTerm(child_cat))
+                # Add the new category to the list
+                list_all_cate.append(str(post[2][-1]))
+            else:
+                print('looking good')
 
         # create the post
         newPost = WordPressPost()
@@ -78,10 +82,33 @@ def create_new_post(client, post_list):
         client.call(posts.NewPost(newPost))
 
 
+# delete post from one category
+def delete_post_from_one_category(client):
+
+        allposts = client.call(posts.GetPosts({'number': 3000})) # add the number of total post on the web
+        delete_list = []
+
+        for post in allposts:
+
+            cat_list = []
+            for term in post.terms:
+                cat_list.append(str(term))
+
+            if 'park' in cat_list:
+                delete_list.append(post.id)
+                print(cat_list)
+
+        print(delete_list)
+
+        for item in delete_list:
+            check = client.call(posts.DeletePost(item))
+            print(str(check))
+
+
 # delete all post on the website
 def delete_all_post(client):
 
-        allposts = client.call(posts.GetPosts({'number': 865})) # add the number of total post on the web
+        allposts = client.call(posts.GetPosts({'number': 1765})) # add the number of total post on the web
 
         id_list = []
         for post in allposts:
@@ -146,14 +173,13 @@ def check_dublicat_city_or_suburb(client):
         list_all_cate.append(str(taxe))
 
     # open the target file to check
-    data_file = pd.read_csv('Output_files/Worship_new.csv')
+    data_file = pd.read_csv('Output_files/clubs.csv')
 
     # standardize the text into lower case
     data_file['Categories'] = data_file['Categories'].str.lower()
 
     # compare the one from the website and the target file
     for row in range(0, len(data_file)):
-
         city = ast.literal_eval(data_file['Categories'][row])[0]
         suburb = ast.literal_eval(data_file['Categories'][row])[1]
 
@@ -196,6 +222,9 @@ def main():
 
         # delete all post
         #delete_all_post(client)
+
+        # delete specific post with target category
+        #delete_post_from_one_category(client)
 
 
 if __name__ == "__main__":

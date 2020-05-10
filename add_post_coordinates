@@ -27,6 +27,6 @@ try:
     cursor.close()
 
 except mysql.connector.Error as error:
-    
+
     # show message when getting errors
     print("Failed to insert record into Laptop table {}".format(error))

@@ -1,0 +1,13 @@
+[ux_banner height="50%" height__sm="60%" bg_color="rgba(233, 183, 156, 0.9)" bg_overlay="rgba(255,255,255,.5)"]
+
+[text_box text_color="dark" width="95" width__sm="90" scale__sm="80" padding="30px 20px 30px 20px" position_x="50" position_y="50" bg="rgba(255, 255, 255, 0.94)" depth="1"]
+
+<h3 class="uppercase"><span style="font-size: 130%; color: #374fb8;">Volunteer_name</span></h3>
+<h4 style="text-align: left;"><span style="font-size: 100%; color: #333333;">Address: add_address</span></h4>
+<h4 style="text-align: left;"><span style="font-size: 100%; color: #333333;">Suburb: add_suburb</span></h4>
+<h4 style="text-align: left;"><span style="font-size: 100%; color: #333333;">Postcode: add_postcode</span></h4>
+
+[/text_box]
+
+[/ux_banner]
+[gap height="40px"]
