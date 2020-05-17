@@ -8,7 +8,7 @@ try:
     connection = mysql.connector.connect(host='52.63.112.8',
                                          database='b11DB_test_1',
                                          user='b11test_user',
-                                         password='8338818bB!')
+                                         password='*********')
 
     # Insert the coordinates to the right tables
     mySql_insert_query = """INSERT INTO wp_novomap_marker (time, post_id, is_main, title, 
