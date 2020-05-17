@@ -155,27 +155,19 @@ def tourist_prepare(data_file, template):
         # Clean category string
         categories = ast.literal_eval(data_file['Categories'][i])
 
-        # create the category unique name
-        '''s_cat = ''
-        for j in categories:
-            s_cat = s_cat + j + '-'''
-
         # get tags (all but cities and suburbs)
-        tags = categories[2:]
-        categories = categories[:3]
-
-        # add the special category to the list of categories
-        #categories.append(s_cat)
+        tags = categories[2:3]
 
         list_tourist.append([final_object, data_file['Place Name'][i], categories, tags])
 
+    print(list_tourist)
     return list_tourist
 
 
 # Prepare nature posts
-def nature_prepare(data_file, template):
+def walking_zone_prepare(data_file, template):
     # list of sports centers to be passed to the API
-    list_nature = []
+    list_wzd = []
 
     # insert unique info for each object to the theme.
     for i in range(0, len(data_file)):
@@ -184,33 +176,33 @@ def nature_prepare(data_file, template):
         temp_template = template.read()
 
         # insert tourist name
-        center_name = temp_template.replace('nature_name', data_file['Place Name'][i])
+        center_name = temp_template.replace('Zone_name', data_file['Place Name'][i])
 
         # insert historical information
-        history_info = center_name.replace('add_history',
-                                           str(data_file['Historical Information'][i]) if str(
-                                               data_file['Historical Information'][
+        info = center_name.replace('add_info',
+                                           str(data_file['comment'][i]) if str(
+                                               data_file['comment'][
                                                    i]) != 'nan' else 'No Available information')
 
         # insert suburb
-        suburb = history_info.replace('add_suburb',
+        suburb = info.replace('add_suburb',
                                       str(data_file['Suburb'][i]) if str(
                                           data_file['Suburb'][i]) != 'nan' else 'No Available information')
 
         # insert city
-        city = suburb.replace('add_city',
-                              str(data_file['Municipality'][i]) if str(
-                                  data_file['Municipality'][i]) != 'nan' else 'No Available information')
+        status = suburb.replace('add_status',
+                              str(data_file['status'][i]) if str(
+                                  data_file['status'][i]) != 'nan' else 'No Available information')
 
         # insert URL
-        url = city.replace('add_url',
-                           str(data_file['Url'][i]) if str(
-                               data_file['Url'][i]) != 'nan' else 'No Available information')
+        url = status.replace('add_url',
+                           str(data_file['url'][i]) if str(
+                               data_file['url'][i]) != 'nan' else 'No Available information')
 
         # insert the place type to the final object to be added to the list of posts
-        final_object = url.replace('add_type',
-                                   str(data_file['Feature Type'][i]) if str(
-                                       data_file['Feature Type'][i]) != 'nan' else 'No Available information')
+        final_object = url.replace('add_add',
+                                   str(data_file['Address'][i]) if str(
+                                       data_file['Address'][i]) != 'nan' else 'No Available information')
 
         # return cursor to the beginning of the file
         template.seek(0)
@@ -218,21 +210,13 @@ def nature_prepare(data_file, template):
         # Clean category string
         categories = ast.literal_eval(data_file['Categories'][i])
 
-        # create the category unique name
-        '''s_cat = ''
-        for j in categories:
-            s_cat = s_cat + j + '-'''
-
         # get tags (all but cities and suburbs)
-        tags = categories[2:]
-        categories = categories[:4]
+        tags = categories[2:3]
 
-        # add the special category to the list of categories
-        #categories.append(s_cat)
+        list_wzd.append([final_object, data_file['Place Name'][i], categories, tags])
+    print(list_wzd)
 
-        list_nature.append([final_object, data_file['Place Name'][i], categories, tags])
-
-    return list_nature
+    return list_wzd
 
 
 # Prepare worship posts
@@ -276,17 +260,8 @@ def worship_prepare(data_file, template):
         # Clean category string
         categories = ast.literal_eval(data_file['Categories'][i])
 
-        # create the category unique name
-        '''s_cat = ''
-        for j in categories:
-            s_cat = s_cat + j + '-'''
-
         # get tags (all but cities and suburbs)
         tags = categories[2:3]
-        categories = categories[:3]
-
-        # add the special category to the list of categories
-        #categories.append(s_cat)
 
         list_worship.append([final_object, data_file['Place Name'][i], categories, tags])
 
@@ -395,5 +370,6 @@ def clubs_prepare(data_file, template):
         tags = categories[2:3]
 
         list_clubs.append([final_object, data_file['Place Name'][i], categories, tags])
+
     return list_clubs
 

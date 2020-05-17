@@ -32,7 +32,7 @@ def insert_data(file):
         return tp.tourist_prepare(data_file, template)
 
     elif file == 'nature':
-        return tp.nature_prepare(data_file, template)
+        return tp.walking_zone_prepare(data_file, template)
 
     elif file == 'worship':
         return tp.worship_prepare(data_file, template)
@@ -43,22 +43,22 @@ def insert_data(file):
     elif file == 'clubs':
         return tp.clubs_prepare(data_file, template)
 
+    elif file == 'dog_walking_zone':
+        return tp.walking_zone_prepare(data_file, template)
+
 
 
 
 def main():
 
     # load place processed open data files in CSV format
-    files = ['clubs'] # ['library', 'sports', 'tourist', nature, worship, volunteers]
+    files = ['tourist'] # ['library', 'sports', 'tourist', nature, worship, volunteers, dog_walking_zone]
 
     # loop throw files and open cosponder template
     for file in files:
         final_template = insert_data(file)
         client = wp.connect_to_wordpress_api()
         wp.create_new_post(client,final_template)
-
-
-
 
 
 if __name__ == "__main__":

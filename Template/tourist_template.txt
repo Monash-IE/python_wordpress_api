@@ -34,7 +34,7 @@
 [/col]
 [col span="6" span__sm="12" align="center"]
 
-<h4 style="text-align: left;">Address: add_address</h4>
+<h4 style="text-align: left;">Address: add_suburb, add_city</h4>
 <h4 style="text-align: left;">URL: add_url</h4>
 <h4 style="text-align: left;">Place Type: add_type</h4>
 

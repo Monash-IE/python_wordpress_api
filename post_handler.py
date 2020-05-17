@@ -85,7 +85,7 @@ def create_new_post(client, post_list):
 # delete post from one category
 def delete_post_from_one_category(client):
 
-        allposts = client.call(posts.GetPosts({'number': 3000})) # add the number of total post on the web
+        allposts = client.call(posts.GetPosts({'number': 1274})) # add the number of total post on the web
         delete_list = []
 
         for post in allposts:
@@ -94,11 +94,11 @@ def delete_post_from_one_category(client):
             for term in post.terms:
                 cat_list.append(str(term))
 
-            if 'park' in cat_list:
+            if 'tourist site' in cat_list:
                 delete_list.append(post.id)
-                print(cat_list)
+         #       print(cat_list)
 
-        print(delete_list)
+        print(len(delete_list))
 
         for item in delete_list:
             check = client.call(posts.DeletePost(item))
@@ -173,7 +173,7 @@ def check_dublicat_city_or_suburb(client):
         list_all_cate.append(str(taxe))
 
     # open the target file to check
-    data_file = pd.read_csv('Output_files/clubs.csv')
+    data_file = pd.read_csv('Output_files/dog_walking_zone.csv')
 
     # standardize the text into lower case
     data_file['Categories'] = data_file['Categories'].str.lower()
@@ -215,7 +215,7 @@ def main():
         #create_city_suburb_categories(client)
 
         # validate datasets categories
-        check_dublicat_city_or_suburb(client)
+        #check_dublicat_city_or_suburb(client)
 
         # validate duplicate posts
         #check_dublicate_post_name(client)
@@ -224,7 +224,7 @@ def main():
         #delete_all_post(client)
 
         # delete specific post with target category
-        #delete_post_from_one_category(client)
+        delete_post_from_one_category(client)
 
 
 if __name__ == "__main__":

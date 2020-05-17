@@ -5,10 +5,10 @@ from mysql.connector import errorcode
 try:
 
     # connect to the database
-    connection = mysql.connector.connect(host='localhost',
+    connection = mysql.connector.connect(host='52.63.112.8',
                                          database='b11DB_test_1',
                                          user='b11test_user',
-                                         password='*******')
+                                         password='8338818bB!')
 
     # Insert the coordinates to the right tables
     mySql_insert_query = """INSERT INTO wp_novomap_marker (time, post_id, is_main, title, 
